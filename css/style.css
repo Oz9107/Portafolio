@@ -594,7 +594,7 @@ h3.my-profession {
     display: none;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .about .about-content .personal-info .info-item,
   .contact .contact-for .col-6,
   .contact .contact-info-item,

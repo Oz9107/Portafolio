@@ -45,6 +45,7 @@ ul {
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.3s ease;
+  background: linear-gradient(90deg, var(--bg-black-900), rgb(127, 173, 225));
 }
 .section.back-section {
   z-index: 1;
@@ -152,6 +153,7 @@ ul {
   align-items: center;
   z-index: 10;
   transition: all 0.3s ease;
+  background: linear-gradient(90deg, rgb(127, 173, 225), var(--bg-black-900));
 }
 
 .aside .logo {

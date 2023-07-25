@@ -1,8 +1,8 @@
 // animaciones
 var typed = new Typed(".typing", {
   strings: ["Desarrollador Web Front End", "Desarrollador Web Back End"],
-  typeSpeed: 100,
-  backSpeed: 60,
+  typeSpeed: 70,
+  backSpeed: 70,
   loop: true,
 });
 
@@ -20,7 +20,6 @@ function handleNavLinkClick(event) {
   const targetSectionId = selectedNavLink.getAttribute("href").split("#")[1];
 
   for (let i = 0; i < totalSection; i++) {
-    allSection[i].classList.remove("back-section");
     allSection[i].classList.remove("active");
   }
 
@@ -48,7 +47,10 @@ function updateNav(selectedElement) {
 
   for (let i = 0; i < totalNavList; i++) {
     navList[i].querySelector("a").classList.remove("active");
-    const currentSectionId = navList[i].querySelector("a").getAttribute("href").split("#")[1];
+    const currentSectionId = navList[i]
+      .querySelector("a")
+      .getAttribute("href")
+      .split("#")[1];
 
     if (targetSectionId === currentSectionId) {
       navList[i].querySelector("a").classList.add("active");
@@ -63,7 +65,9 @@ function handleHireMeButtonClick(event) {
   updateNav(this);
 }
 
-document.querySelector(".hire-me").addEventListener("click", handleHireMeButtonClick);
+document
+  .querySelector(".hire-me")
+  .addEventListener("click", handleHireMeButtonClick);
 
 // Event listener for the nav links
 for (let i = 0; i < totalNavList; i++) {

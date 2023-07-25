@@ -341,7 +341,9 @@ h3.my-profession {
   border-radius: 5px;
   height: 400px;
 }
-
+.container_skill {
+  margin-top: 20px;
+}
 /* about */
 
 .about .about-content {
@@ -600,7 +602,9 @@ h3.my-profession {
   .about .about-content .experience,
   .about .about-content .education,
   .about .about-content .skills,
-  .about .about-content .personal-info {
+  .about .about-content .personal-info,
+  .about .about-content .timeline-box,
+  .about .about-content .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
   }

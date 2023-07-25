@@ -527,7 +527,6 @@ h3.my-profession {
 }
 .portfolio .portfolio-item-inner {
   border: 6px solid var(--bg-black-100);
-
   overflow: hidden;
   border-radius: 10px;
 }

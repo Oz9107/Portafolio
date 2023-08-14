@@ -345,6 +345,9 @@ h3.my-profession {
 .container_skill {
   margin-top: 20px;
 }
+.container_skill img {
+  max-width: 10%;
+}
 /* about */
 
 .about .about-content {

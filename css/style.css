@@ -267,12 +267,12 @@ ul {
   font-weight: 600;
   display: block;
   border-bottom: 1px solid var(--bg-black-50);
-  color: var(--bg-black-50);
+  color: black;
   padding: 15px 20px;
 }
 
 .aside .nav li a.active {
-  color: var(--skin-color);
+  color: var(--bg-black-50);
 }
 
 .aside .nav li a i {
@@ -282,7 +282,6 @@ ul {
 .home {
   min-height: 100vh;
   display: flex;
-
 }
 .home .home-info {
   flex: 0 0 60%;

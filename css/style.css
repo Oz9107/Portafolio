@@ -85,7 +85,9 @@ ul {
   max-width: 100%;
   margin-bottom: 60px;
 }
-
+.hello {
+  color: var(--bg-black-50);
+}
 .section-title h2 {
   font-size: 40px;
   font-weight: 700;
@@ -117,27 +119,29 @@ ul {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  position: relative;
+  justify-content: center;
 }
 
 .btn {
-  font-size: 16px;
+  display: none;
+}
+
+.CV {
+  font-size: 15px;
   font-weight: 500;
-  padding: 12px 35px;
-  background: var(--skin-color);
+  padding: 8px 15px;
+  background: var(--bg-black-50);
   color: var(--bg-black-900);
   border-radius: 40px;
   display: inline-block;
   white-space: nowrap;
   border: none;
   transition: all 0.3s ease;
+  margin-top: 2rem;
 }
 
-.btn:hover {
+.CV:hover {
   transform: scale(1.1);
-}
-.shadow-dark {
-  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 .aside {
   width: 270px;
@@ -164,7 +168,7 @@ ul {
 }
 
 .aside .logo a {
-  color: var(--text-black-900);
+  color: var(--text-black-700);
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   font-size: 40px;
@@ -377,8 +381,7 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info {
-  flex: 0 0 60%;
-  max-width: 600%;
+  max-width: 100%;
   margin-top: 50px;
 }
 .about .about-content .personal-info .info-item {

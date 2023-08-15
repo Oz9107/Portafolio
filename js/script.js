@@ -1,8 +1,12 @@
 // animaciones
 var typed = new Typed(".typing", {
-  strings: ["Desarrollador Web Front End", "Desarrollador Web Back End"],
-  typeSpeed: 70,
-  backSpeed: 70,
+  strings: [
+    "Desarrollador Web Front End",
+    "Desarrollador Web Back End",
+    "Contactame!",
+  ],
+  typeSpeed: 50,
+  backSpeed: 50,
   loop: true,
 });
 

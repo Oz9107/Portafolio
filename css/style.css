@@ -267,7 +267,7 @@ ul {
   font-weight: 600;
   display: block;
   border-bottom: 1px solid var(--bg-black-50);
-  color: var(--text-black-900);
+  color: var(--bg-black-50);
   padding: 15px 20px;
 }
 
@@ -282,7 +282,7 @@ ul {
 .home {
   min-height: 100vh;
   display: flex;
-  color: var(--text-black-900);
+
 }
 .home .home-info {
   flex: 0 0 60%;

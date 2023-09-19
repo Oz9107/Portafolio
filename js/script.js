@@ -1,3 +1,4 @@
+//archivo js
 // animaciones
 var typed = new Typed(".typing", {
   strings: [
@@ -92,3 +93,35 @@ function asideSectionTogglerBtn() {
     allSection[i].classList.toggle("open");
   }
 }
+
+//carrusel
+const carousel = document.querySelector(".portfolio-carousel");
+const itemsContainer = carousel.querySelector(".portfolio-items");
+const prevButton = carousel.querySelector(".prev-button");
+const nextButton = carousel.querySelector(".next-button");
+let currentIndex = 0;
+
+function moveCarousel(direction) {
+  const itemWidth = itemsContainer.firstElementChild.offsetWidth;
+  const numVisibleItems = 1; // Cambia esto para mostrar más o menos proyectos a la vez
+
+  currentIndex += direction * numVisibleItems;
+
+  const numItems = itemsContainer.children.length;
+  if (currentIndex < 0) {
+    currentIndex = 0;
+  } else if (currentIndex >= numItems - numVisibleItems + 1) {
+    currentIndex = numItems - numVisibleItems;
+  }
+
+  const translateX = -currentIndex * (itemWidth + 10); // 20 es el margen entre proyectos
+  itemsContainer.style.transform = `translateX(${translateX}px)`;
+}
+
+prevButton.addEventListener("click", () => {
+  moveCarousel(-1);
+});
+
+nextButton.addEventListener("click", () => {
+  moveCarousel(1);
+});

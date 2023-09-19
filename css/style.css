@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
 
 :root {
-  --bg-black-900: #f3f3f5;
-  --bg-black-100: #ffffff;
-  --bg-black-50: #4420f7;
-  --text-black-900: rgb(12, 16, 74);
-  --text-black-700: #4346e7;
+  --bg-black-900: #031c35;
+  --bg-black-100: rgb(98, 98, 230);
+  --bg-black-50: #d3d3e1;
+  --text-black-900: #0b0b3f;
+  --text-black-700: #d3d3e1;
 }
 
 body {
@@ -26,7 +26,9 @@ body {
 ::after {
   box-sizing: border-box;
 }
-
+p {
+  color: var(--text-black-700);
+}
 ul {
   list-style: none;
 }
@@ -285,7 +287,7 @@ ul {
   font-weight: 600;
   display: block;
   border-bottom: 1px solid var(--bg-black-50);
-  color: black;
+  color: var(--bg-black-100);
   padding: 15px 20px;
 }
 
@@ -414,7 +416,7 @@ h3.my-profession {
 .about .about-content .about-text p {
   font-size: 16px;
   line-height: 25px;
-  color: black;
+  color: var(--text-black-700);
 }
 
 .about .about-content .personal-info {
@@ -437,7 +439,7 @@ h3.my-profession {
 
 .about .about-content .personal-info .info-item p span {
   font-weight: 400;
-  color: black;
+  color: var(--bg-black-50);
   margin-left: 4px;
   display: inline-block;
 }
@@ -515,7 +517,7 @@ h3.my-profession {
 }
 
 .about .about-content .timeline-box {
-  background-color: var(--bg-black-100);
+  background-color: var(--bg-black-50);
   padding: 30px 30px;
   border: 1px solid var(--bg-black-50);
   border-radius: 10px;
@@ -540,13 +542,13 @@ h3.my-profession {
   height: 100%;
   left: 7px;
   top: 0;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-black-900);
 }
 
 .about .about-content .timeline-box .timeline-date {
   font-weight: 400;
   font-size: 16px;
-  color: var(--bg-black-50);
+  color: var(--bg-black-900);
   margin-bottom: 12px;
 }
 
@@ -558,14 +560,14 @@ h3.my-profession {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 15px;
-  color: var(--bg-black-50);
+  color: var(--bg-black-900);
   text-transform: capitalize;
 }
 
 .about .about-content .timeline-box .timeline-text {
   font-size: 16px;
   line-height: 25px;
-  color: black;
+  color: var(--bg-black-900);
   text-align: justify;
 }
 
@@ -601,8 +603,8 @@ h3.my-profession {
 .prev-button,
 .next-button {
   cursor: pointer;
-  background-color: var(--bg-black-50);
-  color: #fff;
+  background-color: rgb(61, 61, 231);
+  color: var(--bg-black-50);
   padding: 5px 10px;
   border: none;
   outline: none;
@@ -650,7 +652,7 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item-inner {
-  border: 6px solid var(--bg-black-100);
+  border: 4px solid var(--bg-black-50);
   overflow: hidden;
   border-radius: 10px;
 }
@@ -660,6 +662,7 @@ h3.my-profession {
   height: 150px;
   object-position: cover;
   object-fit: cover;
+  background-color: var(--bg-black-50);
 }
 
 /* contact */
@@ -667,24 +670,27 @@ h3.my-profession {
   color: var(--bg-black-50);
   text-align: center;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .contact-sub-title {
   text-align: center;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  color: var(--bg-black-50);
 }
 
 .contact .contact-info-item {
   flex: 0 0 33.3333%;
   max-width: 33.3333%;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  color: var(--bg-black-50);
 }
 
 .contact .contact-info-item p {
   border-bottom: var(--bg-black-50) 2px inset;
+  color: var(--bg-black-50);
 }
 
 /* Estilo para el formulario de contacto */
@@ -692,6 +698,7 @@ h3.my-profession {
   background-color: var(--bg-black-900);
   padding: 10px 0;
   margin-top: -45px;
+  color: var(--bg-black-50);
 }
 
 .contact-form h3 {
@@ -777,7 +784,6 @@ h3.my-profession {
 }
 
 @media (max-width: 882px) {
-
   .contact .contact-info-item,
   .portfolio .portfolio-item {
     flex: 0 0 50%;
@@ -800,69 +806,68 @@ h3.my-profession {
   }
 }
 
-  @media (max-width: 450px) {
-
-    .about .about-content .personal-info .info-item,
-    .contact .contact-for .col-6,
-    .contact .contact-info-item,
-    .portfolio .portfolio-item,
-    .about .about-content .experience,
-    .about .about-content .education,
-    .about .about-content .skills,
-    .about .about-content .personal-info,
-    .about .about-content .timeline-box,
-    .about .about-content .timeline-box {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-    .portfolio-item {
-      flex: 0 0 calc(100% - 20px);
-      max-width: calc(100% - 20px);
-    }
-     .contact-form {
-        width: 100%;
-    }
-
-    .contact-form h3 {
-        text-align: center;
-    }
-
-    .contact-form form {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .form-group label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .form-group input[type="text"],
-    .form-group input[type="email"],
-    .form-group textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    .form-group textarea {
-        resize: vertical;
-    }
-
-    button[type="submit"] {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        background-color: #007BFF;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+@media (max-width: 450px) {
+  .about .about-content .personal-info .info-item,
+  .contact .contact-for .col-6,
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info,
+  .about .about-content .timeline-box,
+  .about .about-content .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
+  .portfolio-item {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form h3 {
+    text-align: center;
+  }
+
+  .contact-form form {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+  }
+
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

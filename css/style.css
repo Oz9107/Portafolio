@@ -800,25 +800,69 @@ h3.my-profession {
   }
 }
 
-@media (max-width: 450px) {
+  @media (max-width: 450px) {
 
-  .about .about-content .personal-info .info-item,
-  .contact .contact-for .col-6,
-  .contact .contact-info-item,
-  .contact-form,
-  .portfolio .portfolio-item,
-  .about .about-content .experience,
-  .about .about-content .education,
-  .about .about-content .skills,
-  .about .about-content .personal-info,
-  .about .about-content .timeline-box,
-  .about .about-content .timeline-box {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+    .about .about-content .personal-info .info-item,
+    .contact .contact-for .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info,
+    .about .about-content .timeline-box,
+    .about .about-content .timeline-box {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .portfolio-item {
+      flex: 0 0 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+    }
+     .contact-form {
+        width: 100%;
+    }
 
-  .portfolio-item {
-    flex: 0 0 calc(100% - 20px);
-    max-width: calc(100% - 20px);
+    .contact-form h3 {
+        text-align: center;
+    }
+
+    .contact-form form {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+    button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
   }
-}

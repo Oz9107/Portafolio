@@ -834,11 +834,11 @@ h3.my-profession {
 
   .contact-form form {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .form-group label {
@@ -851,7 +851,7 @@ h3.my-profession {
   .form-group textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
@@ -861,9 +861,10 @@ h3.my-profession {
   }
 
   .contact-form button[type="submit"] {
+    font-size: 14px;
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 4px 10px;
     background-color: #007bff;
     color: #fff;
     border: none;

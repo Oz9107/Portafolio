@@ -860,7 +860,7 @@ h3.my-profession {
     resize: vertical;
   }
 
-  button[type="submit"] {
+  .contact-form button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;

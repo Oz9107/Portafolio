@@ -697,7 +697,7 @@ h3.my-profession {
 .contact-form {
   background-color: var(--bg-black-900);
   padding: 10px 0;
-  margin-top: -45px;
+  margin-top: -80px;
   color: var(--bg-black-50);
 }
 
@@ -708,7 +708,7 @@ h3.my-profession {
 }
 
 .contact-form form {
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -855,7 +855,9 @@ h3.my-profession {
     border: 1px solid #ccc;
     border-radius: 4px;
   }
-
+  .contact-form textarea{
+    height: 80px;
+  }
   .form-group textarea {
     resize: vertical;
   }

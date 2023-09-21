@@ -125,3 +125,19 @@ prevButton.addEventListener("click", () => {
 nextButton.addEventListener("click", () => {
   moveCarousel(1);
 });
+const botonModo = document.getElementById("cambiarModo");
+const body = document.body;
+
+botonModo.addEventListener("click", function () {
+  if (body.classList.contains("modo-claro")) {
+    // Cambia al modo oscuro
+    body.classList.remove("modo-claro");
+    body.classList.add("modo-oscuro");
+    botonModo.innerHTML = '<i class="fas fa-sun"></i>'; // Cambia al icono de sol
+  } else {
+    // Cambia al modo claro
+    body.classList.remove("modo-oscuro");
+    body.classList.add("modo-claro");
+    botonModo.innerHTML = '<i class="fas fa-moon"></i>'; // Cambia al icono de luna
+  }
+});

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
 
 .modo-claro {
-  --bg-black-900: #ced4da;
+  --bg-black-900: #e9eff4;
   --bg-black-200: #01010b;
   --bg-black-50: #362f9e;
 }
@@ -9,7 +9,7 @@
 /* Modo Oscuro */
 .modo-oscuro {
   --bg-black-900: #0b143f;
-  --bg-black-200: #f4f4f6;
+  --bg-black-200: #e9eff4;
   --bg-black-50: #99a2c5;
 }
 

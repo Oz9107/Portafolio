@@ -719,59 +719,63 @@ h3.my-profession {
 }
 
 /* Estilo para el formulario de contacto */
+/* Estilos generales para el formulario */
 .contact-form {
-  background-color: var(--bg-black-900);
-  padding: 10px 0;
-  margin-top: -80px;
-  color: var(--bg-black-200);
+    background-color: var(--bg-black-900);
+    padding: 20px;
+    margin-top: -80px;
+    color: var(--text-black-200);
 }
 
 .contact-form h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: var(--bg-black-50);
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--bg-black-50);
 }
 
 .contact-form form {
-  max-width: 400px;
-  margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .contact-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid;
-  border-radius: 5px;
-  font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .contact-form textarea {
-  height: 90px;
+    resize: vertical;
 }
 
 .contact-form button {
-  background-color: var(--bg-black-50);
-  color: var(--bg-black-900);
-  border: none;
-  padding: 7px 13px;
-  border-radius: 5px;
-  font-size: 13px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: var(--bg-black-50);
+    color: var(--bg-black-900);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .contact-form button:hover {
-  background-color: var(--bg-black-200);
+    background-color: var(--bg-black-200);
 }
+
 
 @media (max-width: 1100px) {
   .aside {
@@ -843,55 +847,8 @@ h3.my-profession {
   .about .about-content .personal-info,
   .about .about-content .timeline-box,
   .about .about-content .timeline-box,
-  .contact-form button[type="submit"] {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
   .portfolio-item {
     flex: 0 0 calc(100% - 20px);
     max-width: calc(100% - 20px);
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form h3 {
-    text-align: center;
-  }
-
-  .contact-form form {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .form-group {
-    margin-bottom: 10px;
-  }
-
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex: 0 0 100%;
-  }
-
-  .form-group textarea {
-    resize: vertical;
-  }
-
-  .contact-form button[type="submit"] {
-    position: relative;
-    z-index: 1;
   }
 }
